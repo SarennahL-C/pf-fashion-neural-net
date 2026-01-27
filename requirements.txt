@@ -1,0 +1,5 @@
+numpy
+pandas
+collections
+scikit-learn
+torchvision
