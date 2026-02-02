@@ -1,71 +1,55 @@
 # Fashion MNIST — Neural Network Classification with PyTorch
 
-This project implements a **Multilayer Perceptron (MLP) neural network** using PyTorch to classify images from the **Fashion MNIST dataset**. The task forms part of a structured machine learning assignment focused on building, training, and evaluating a neural network for multi-class image classification.
+This project implements a **Multilayer Perceptron (MLP) neural network** using PyTorch to classify images from the **Fashion MNIST dataset**. The objective was to build, train, and evaluate a neural network for multi-class image classification, while developing familiarity with modern deep learning workflows and evaluation practices.
 
-This project represents my **first modern neural network implementation**, providing hands-on experience with contemporary deep learning frameworks, training workflows, and model evaluation techniques.
+This project represents my **first hands-on implementation of a modern neural network**, providing practical experience with PyTorch, optimisation workflows, and performance assessment.
 
-![Table with 10 rows and 20 examples in each row. Each row is labelled eg "1 trouser" and then there are 20 examples of images in the MNIST dataset that have been classified as trousers. The images are all greyscale and the same square size.](Fashion-MNIST-Dataset-Images-with-Labels-and-Description-II-LITERATURE-REVIEW-In-image.png)
+![Fashion MNIST sample images](Fashion-MNIST-Dataset-Images-with-Labels-and-Description-II-LITERATURE-REVIEW-In-image.png)
 
-Figure reproduced from K V, Greeshma & Gripsy, Viji. (2020). Image Classification using HOG and LBP Feature Descriptors with SVM and CNN. via ResearchGate.
+<sub>Figure reproduced from K. V. Greeshma & V. Gripsy (2020), via ResearchGate.</sub>
 
 ---
 
-### What’s in this repository
+## What’s in this repository
 
 - **Jupyter Notebook:** full neural network implementation (`fashion_mnist_task.ipynb`)  
-- **Images:** visuals  
+- **Images:** visualisations and evaluation outputs  
 - **Requirements:** Python dependencies (`requirements.txt`)  
 
 ---
 
-### Project Context
+## Project Context
 
 The Fashion MNIST dataset consists of 28×28 grayscale images representing ten categories of clothing and accessories, including items such as T-shirts, coats, sandals, sneakers, and bags.
 
-The objective of the task was to:
-
-- Build a neural network classifier using PyTorch  
-- Train the model to achieve at least **80% accuracy** on the test dataset  
-- Tune at least one hyperparameter and justify its selection  
-- Evaluate model performance using accuracy, precision, recall, and F1-score  
-- Interpret model behaviour using a confusion matrix  
-
-The project provided a structured framework while requiring independent reasoning around model configuration, optimisation, and evaluation.
+The task was to design and train a neural network classifier capable of achieving strong performance on unseen data, while also demonstrating appropriate evaluation and interpretation of results. Emphasis was placed on understanding model behaviour, tuning hyperparameters thoughtfully, and assessing performance across all classes rather than relying on accuracy alone.
 
 ---
 
-### Approach Overview
+## Approach Overview
+
+The analysis followed a standard neural network workflow:
 
 - Data loading and preprocessing using PyTorch datasets and transforms  
 - Train–test splitting via DataLoader  
 - Construction of a Multilayer Perceptron (MLP) architecture  
 - Selection of activation functions and loss function  
-- Model training using gradient descent optimisation  
-- Hyperparameter tuning to improve classification performance  
+- Model training using gradient-based optimisation  
+- Targeted hyperparameter tuning  
 - Evaluation using classification metrics and confusion matrix analysis  
 
 ---
 
-### Key Insights / Findings
+## Key Insights / Findings
 
 - Model performance improved through targeted hyperparameter tuning, demonstrating the sensitivity of neural networks to configuration choices.  
-- Certain clothing classes exhibited stronger confusion due to visual similarity, particularly among upper-body garments.  
-- Evaluation using macro-averaged metrics provided a more balanced view of performance across all classes.  
-- The confusion matrix offered valuable insight beyond overall accuracy, highlighting where misclassifications occurred.  
+- Certain clothing categories exhibited higher confusion due to visual similarity, particularly among upper-body garments.  
+- Macro-averaged precision, recall, and F1-score provided a more balanced view of model performance across all classes.  
+- Confusion matrix analysis offered insight beyond overall accuracy, highlighting specific patterns of misclassification.  
 
 ---
 
-### Personal Context
-
-Although this was my first opportunity to **implement a modern neural network using PyTorch**, neural networks are not entirely new to my academic background.
-
-My MPhil thesis (2001) involved the use of a neural network model to predict **stress relaxation behaviour in magnesium screws within a car engine environment**. While I did not develop the network code myself at that time — it was implemented by another member of the research group — I worked directly with the model as a predictive tool and interpreted its outputs within a materials science context. This gave me a deep understanding of the principles underlying neural networks and an appreciation of the strengths, potential pitfalls, and limitations of the method.
-
-This project represents a meaningful bridge between **early exposure to neural network modelling** and contemporary hands-on implementation using modern deep learning frameworks. 
-
----
-
-### Skills Demonstrated
+## Skills Demonstrated
 
 **Analysis**
 - Data preprocessing for image classification  
@@ -81,23 +65,22 @@ This project represents a meaningful bridge between **early exposure to neural n
 - Accuracy, precision, recall, and F1-score (macro average)  
 
 **Tools**
+- Python  
 - PyTorch  
 - torchvision  
 - scikit-learn  
-- Python  
 - Jupyter Notebook  
 
 ---
 
-### Requirements
+## Requirements
 
 Install the required Python packages with: `pip install -r requirements.txt`
 
 ---
 
-### Why this project belongs in my portfolio
+## Why this project belongs in my portfolio
 
-This project demonstrates my ability to move from traditional machine learning techniques into modern deep learning workflows. It highlights both technical implementation and thoughtful evaluation, while also reflecting continuity in my long-standing interest in predictive modelling.
+This project demonstrates my transition from classical machine learning techniques into modern deep learning workflows, with a focus on implementation, evaluation, and interpretation rather than optimisation alone.
 
-Together with my supervised and unsupervised learning projects, it represents an important step in my progression toward applied machine learning and neural network-based approaches.
-
+While this represents my first practical implementation of a neural network using PyTorch, it builds on earlier academic experience working with neural network models as analytical tools. Together with my other supervised, unsupervised, and deep learning projects, it marks an important step in my progression toward applied machine learning and neural network–based approaches.
