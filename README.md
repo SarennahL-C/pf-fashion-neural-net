@@ -89,9 +89,9 @@ This project represents a meaningful bridge between **early exposure to neural n
 
 ---
 
-### Requirements / How to Run
+### Requirements
 
-Install the required Python dependencies using `requirements.txt`.
+Install the required Python packages with: `pip install -r requirements.txt`
 
 ---
 
